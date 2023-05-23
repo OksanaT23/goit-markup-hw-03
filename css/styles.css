@@ -9,7 +9,6 @@
   /* Button-text-color: #FFFFFF */
   /* Задній фон основний - The background is basic #E5E5E5 */
   /* Задній фон вторинний - The background is secondary #2E2F42 */
-  /* Button-hover-bg-color: var(--link-active) */
 
   --button-background: #e7e9fc;
   --the-main-color-of-the-text: #434455;
@@ -25,11 +24,37 @@
 }
 
 /* Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--button-text-color);
   color: var(--the-main-color-of-the-text);
   font-family: Roboto, sans-serif;
   font-size: 16px;
+}
+
+.section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.padding-y-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link {
@@ -43,6 +68,17 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.primary {
+  color: var(--button-text-color);
+  background-color: var(--button-default-bg-color);
+}
+.primary:hover,
+.ptimary:focus {
+  background-color: var(--button-hover-bg-color);
 }
 
 .list {
@@ -53,6 +89,8 @@ body {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
+  /* margin-top: 72px; */
+  margin-bottom: 72px;
 }
 
 .subtitle {
@@ -61,10 +99,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-1);
-}
-.services-options {
-  text-align: center;
-  text-transform: capitalize;
 }
 
 /* Logo */
@@ -84,6 +118,15 @@ body {
 }
 .logo .part-two {
   color: var(--secondary-text-color-1);
+}
+
+/* Heder */
+.header {
+  border-bottom: 1px solid var(--button-background);
+}
+.header .container {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* Navigation */
@@ -125,6 +168,10 @@ body {
 .order-service {
   background-color: var(--secondary-text-color-1);
 }
+.order-service .container {
+  padding: 188px 0;
+  text-align: center;
+}
 .order-service .main-title {
   text-align: center;
   letter-spacing: 0.02em;
@@ -132,14 +179,12 @@ body {
   font-size: 56px;
   line-height: 1.07;
   color: var(--button-text-color);
+  max-width: 500px;
+  margin: 0 auto;
 }
 .order-service .button {
-  color: var(--button-text-color);
-  background-color: var(--button-default-bg-color);
-}
-.order-service .button:hover,
-.order-service .button:focus {
-  background-color: var(--button-hover-bg-color);
+  margin-top: 48px;
+  padding: 16px 32px;
 }
 
 /* Features */
@@ -150,6 +195,10 @@ body {
 }
 
 /* Services */
+.services-options {
+  text-align: center;
+  text-transform: capitalize;
+}
 .services .title-subtitle {
   font-weight: 700;
   font-size: 36px;
@@ -176,23 +225,33 @@ body {
 }
 
 /* Filters */
+.filters-list {
+  padding-top: 24px;
+  padding-bottom: 72px;
+}
 .filters-list-item .button {
   font-weight: 500;
   color: var(--accent-color);
   background-color: var(--secondary-text-color-2);
 }
+.filters-list-item .active,
 .filters-list-item .button:hover,
 .filters-list-item .button:focus {
   color: var(--button-text-color);
   background-color: var(--link-active);
 }
 
+.projects-list-item {
+  margin-bottom: 80px;
+  margin-right: 24px;
+}
 .projects-list-item .title-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--secondary-text-color-1);
   margin-bottom: 8px;
+  text-align: left;
 }
 .projects-list-item .feature-text {
   margin-top: 8px;
@@ -202,6 +261,7 @@ body {
 /* Footer */
 .footer {
   background-color: var(--secondary-text-color-1);
+  padding: 100px 0;
 }
 .footer .logo .part-two {
   color: var(--secondary-text-color-2);

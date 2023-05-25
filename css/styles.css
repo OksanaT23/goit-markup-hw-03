@@ -56,6 +56,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
 
 .link {
   text-decoration: none;
@@ -73,12 +81,18 @@ body {
 }
 
 .primary {
+  min-width: 169px;
+  height: 56px;
   color: var(--button-text-color);
   background-color: var(--button-default-bg-color);
 }
 .primary:hover,
 .ptimary:focus {
   background-color: var(--button-hover-bg-color);
+}
+.secondary {
+  height: 48px;
+  padding: 12px 24px;
 }
 
 .list {
@@ -99,6 +113,9 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-1);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
 }
 
 /* Logo */
@@ -109,6 +126,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo:link,
 .logo:visited,
@@ -136,6 +154,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-1);
 }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
 .nav-link:link,
 .nav-link:visited {
@@ -149,6 +172,12 @@ body {
 /* Contacts */
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .contacts .link:link,
 .contacts .link:visited {
@@ -182,6 +211,9 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
+.main-title {
+  margin-bottom: 48px;
+}
 .order-service .button {
   margin-top: 48px;
   padding: 16px 32px;
@@ -192,6 +224,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.features-list {
+  display: flex;
+  gap: 24px;
 }
 
 /* Services */
@@ -204,6 +240,11 @@ body {
   font-size: 36px;
   line-height: 1.11;
   color: var(--secondary-text-color-1);
+}
+.services-list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
 }
 
 /* Our Team */
@@ -220,6 +261,12 @@ body {
   text-transform: capitalize;
   color: var(--secondary-text-color-1);
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
 .team-list-item {
   background-color: var(--button-text-color);
 }
@@ -228,6 +275,10 @@ body {
 .filters-list {
   padding-top: 24px;
   padding-bottom: 72px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
 }
 .filters-list-item .button {
   font-weight: 500;
@@ -243,7 +294,12 @@ body {
 
 .projects-list-item {
   margin-bottom: 80px;
-  margin-right: 24px;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: space-between;
 }
 .projects-list-item .title-subtitle {
   font-weight: 500;
@@ -270,4 +326,7 @@ body {
   color: var(--secondary-text-color-2);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 264px;
 }

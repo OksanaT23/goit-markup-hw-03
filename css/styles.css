@@ -58,8 +58,7 @@ img {
 
 .container {
   width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0 15px;
 }
 .container-projects {

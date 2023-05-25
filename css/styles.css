@@ -63,6 +63,7 @@ img {
 .container-projects {
   padding: 32px 16px;
   border: 1px solid var(--button-background);
+  border-top: none;
 }
 .visually-hidden {
   display: none;

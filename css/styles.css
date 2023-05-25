@@ -105,10 +105,10 @@ img {
   padding: 12px 24px;
   border: 1px solid var(--button-background);
 }
-.secondary:hover {
+.active:hover {
   border: 1px solid transparent;
 }
-.secondary:focus {
+.active:focus {
   border: 1px solid transparent;
 }
 

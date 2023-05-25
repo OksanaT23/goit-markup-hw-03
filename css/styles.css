@@ -48,6 +48,7 @@ img {
 .padding-y-max {
   padding-top: 120px;
   padding-bottom: 120px;
+  padding: 0 15px 0 15px;
 }
 
 .padding-top-zero {

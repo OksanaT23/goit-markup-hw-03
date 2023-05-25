@@ -138,6 +138,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo:link,
 .logo:visited,

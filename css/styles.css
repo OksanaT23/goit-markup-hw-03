@@ -141,8 +141,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-1);
   margin-bottom: 8px;
-  text-align: center;
-  margin-bottom: 8px;
 }
 
 /* Logo */
@@ -161,6 +159,7 @@ img {
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
+  margin-bottom: 17.5px;
 }
 .logo .part-two {
   color: var(--secondary-text-color-1);
@@ -252,7 +251,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
 }
 .features-list {
   display: flex;
@@ -310,10 +308,10 @@ img {
 }
 .member-info {
   padding: 32px 16px;
+  text-align: center;
 }
 /* Filters */
 .filters-list {
-  padding-top: 24px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -337,7 +335,6 @@ img {
   padding-bottom: 120px;
 }
 .projects-list-item {
-  margin-bottom: 80px;
   width: calc((100% - 48px) / 3);
 }
 .projects-list {
@@ -355,7 +352,6 @@ img {
   text-align: left;
 }
 .projects-list-item .feature-text {
-  margin-top: 8px;
   color: var(--the-main-color-of-the-text);
 }
 
@@ -374,7 +370,5 @@ img {
   color: var(--secondary-text-color-2);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
   width: 264px;
 }

@@ -151,7 +151,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
   display: inline-block;
 }
 .logo:link,
@@ -159,7 +158,6 @@ img {
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
-  margin-bottom: 17.5px;
 }
 .logo .part-two {
   color: var(--secondary-text-color-1);
@@ -183,6 +181,7 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-left: 76px;
 }
 
 .nav-link:link,
